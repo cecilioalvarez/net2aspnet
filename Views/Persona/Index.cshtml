@@ -3,7 +3,12 @@
 }
 
  <table>
-@foreach (var persona in ViewBag.lista){
+    <tr>
+        <th>Dni</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+    </tr>
+    @foreach (var persona in ViewBag.lista){
         <tr>
         <td>@persona.Dni</td>
         <td>@persona.Nombre</td>
