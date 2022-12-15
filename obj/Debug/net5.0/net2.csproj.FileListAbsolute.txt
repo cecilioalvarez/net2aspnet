@@ -37,3 +37,15 @@
 /Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/net2.pdb
 /Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/net2.genruntimeconfig.cache
 /Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/net2.csproj.CopyComplete
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/Google.Protobuf.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/K4os.Compression.LZ4.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/K4os.Compression.LZ4.Streams.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/K4os.Hash.xxHash.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/MySql.Data.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/ZstdNet.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/BouncyCastle.Crypto.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/Razor/Views/Persona/Index.cshtml.g.cs
+/Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/Razor/Views/Persona/Privacy.cshtml.g.cs

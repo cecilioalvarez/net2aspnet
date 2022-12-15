@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+ <table>
+@foreach (var persona in ViewBag.lista){
+        <tr>
+        <td>@persona.Dni</td>
+        <td>@persona.Nombre</td>
+         <td>@persona.Apellidos</td>
+        </tr>
+    }
+    </table>
