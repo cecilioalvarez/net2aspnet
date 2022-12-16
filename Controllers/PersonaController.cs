@@ -31,9 +31,10 @@ namespace net2.Controllers
             return View();
         }
 
-           public IActionResult Insertar()
+           public IActionResult Insertar(Persona persona)
         {
             PersonaRepository repositorio= new PersonaRepository();
+            repositorio.Insertar(persona);
             List<Persona>lista=repositorio.BuscarTodas();
             ViewBag.lista=lista;
             return View("Index");
