@@ -17,6 +17,7 @@ namespace net2.Models
             Apellidos=apellidos;
         }
         public Persona() {}
+        
         public Persona(string dni) {
 
             Dni=dni;

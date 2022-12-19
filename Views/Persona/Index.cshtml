@@ -7,12 +7,14 @@
         <th>Dni</th>
         <th>Nombre</th>
         <th>Apellidos</th>
+        <th>Borrar</th>
     </tr>
     @foreach (var persona in ViewBag.lista){
         <tr>
         <td>@persona.Dni</td>
         <td>@persona.Nombre</td>
          <td>@persona.Apellidos</td>
+          <td><a href="persona/borrar?dni=@persona.Dni">borrar</a></td>
         </tr>
     }
     </table>
