@@ -41,6 +41,14 @@ namespace net2.Controllers
         }
 
 
+           public IActionResult FormularioEditar()
+        {
+            PersonaRepository repositorio= new PersonaRepository();
+            
+            return View();
+        }
+
+
             public IActionResult Borrar (String dni)
         {
             PersonaRepository repositorio= new PersonaRepository();
