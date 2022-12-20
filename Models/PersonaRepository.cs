@@ -125,9 +125,10 @@ public  void  Guardar(Persona persona) {
 
             var comando = conn.CreateCommand();
             comando.CommandText = 
-            " update Personas set nombre='" +persona.Nombre+ "','"
-             +persona.Nombre+"',apellidos='" +persona.Apellidos+
+            " update Personas set nombre='" +persona.Nombre+ "',"
+             + " apellidos='" +persona.Apellidos+
               "' where dni='" + persona.Dni+ "'"; 
+            
             comando.ExecuteNonQuery();
 
           

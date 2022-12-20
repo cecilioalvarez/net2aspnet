@@ -41,6 +41,16 @@ namespace net2.Controllers
         }
 
 
+        public IActionResult Guardar(Persona persona)
+        {
+            PersonaRepository repositorio= new PersonaRepository();
+            repositorio.Guardar(persona);
+            List<Persona>lista=repositorio.BuscarTodas();
+            ViewBag.lista=lista;
+            return View("Index");
+        }
+
+
            public IActionResult FormularioEditar(String dni)
         {
             PersonaRepository repositorio= new PersonaRepository();
