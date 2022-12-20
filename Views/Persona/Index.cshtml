@@ -8,6 +8,7 @@
         <th>Nombre</th>
         <th>Apellidos</th>
         <th>Borrar</th>
+         <th>Editar</th>
     </tr>
     @foreach (var persona in ViewBag.lista){
         <tr>
@@ -15,6 +16,7 @@
         <td>@persona.Nombre</td>
          <td>@persona.Apellidos</td>
           <td><a href="/persona/borrar?dni=@persona.Dni">borrar</a></td>
+          <td><a href="/persona/formularioeditar?dni=@persona.Dni">editar</a></td>
         </tr>
     }
     </table>
