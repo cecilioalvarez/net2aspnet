@@ -63,7 +63,8 @@ public Persona BuscarUno(String dni) {
             conn.Open();
 
             var comando = conn.CreateCommand();
-            comando.CommandText = "select * from  Personas where dni='"+ dni+"'";
+            comando.CommandText = 
+            "select * from  Personas where dni='"+ dni+"'";
             var reader = 
             comando
             .ExecuteReader(System.Data.CommandBehavior.CloseConnection);
