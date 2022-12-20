@@ -106,6 +106,35 @@ public  void  Insertar(Persona persona) {
 
         }
 
+
+
+public  void  Guardar(Persona persona) {
+
+
+            var sb = new MySqlConnectionStringBuilder
+            {
+                Server = "localhost",
+                UserID = "root",
+                Password = "root",
+                Port = 3306,
+                Database = "curso2"
+            };
+            MySqlConnection conn = 
+            new MySqlConnection(sb.ConnectionString);
+            conn.Open();
+
+            var comando = conn.CreateCommand();
+            comando.CommandText = 
+            " update Personas set nombre='" +persona.Nombre+ "','"
+             +persona.Nombre+"',apellidos='" +persona.Apellidos+
+              "' where dni='" + persona.Dni+ "'"; 
+            comando.ExecuteNonQuery();
+
+          
+
+
+        }
+
 public  void  Borrar(Persona p) {
 
 
