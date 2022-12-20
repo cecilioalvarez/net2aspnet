@@ -45,6 +45,43 @@ namespace net2.Models
 
         }
 
+
+
+public Persona BuscarUno(String dni) {
+
+
+            var sb = new MySqlConnectionStringBuilder
+            {
+                Server = "localhost",
+                UserID = "root",
+                Password = "root",
+                Port = 3306,
+                Database = "curso2"
+            };
+            MySqlConnection conn = 
+            new MySqlConnection(sb.ConnectionString);
+            conn.Open();
+
+            var comando = conn.CreateCommand();
+            comando.CommandText = "select * from  Personas where dni='"+ dni+"'";
+            var reader = 
+            comando
+            .ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+
+           
+            reader.Read();
+            Persona p= new Persona(reader.GetString("dni"),
+            reader.GetString("nombre"),
+            reader.GetString("apellidos"));
+              
+
+            
+
+            return p;
+
+
+        }
+
 public  void  Insertar(Persona persona) {
 
 

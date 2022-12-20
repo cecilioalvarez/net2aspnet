@@ -49,3 +49,4 @@
 /Users/cecilioalvarezcaules/Desktop/net2/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/Razor/Views/Persona/Index.cshtml.g.cs
 /Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/Razor/Views/Persona/FormularioInsertar.cshtml.g.cs
+/Users/cecilioalvarezcaules/Desktop/net2/obj/Debug/net5.0/Razor/Views/Persona/FormularioEditar.cshtml.g.cs
