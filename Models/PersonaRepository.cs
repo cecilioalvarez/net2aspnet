@@ -75,9 +75,6 @@ public Persona BuscarUno(String dni) {
             reader.GetString("nombre"),
             reader.GetString("apellidos"));
               
-
-            
-
             return p;
 
 

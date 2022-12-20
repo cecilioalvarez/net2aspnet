@@ -41,10 +41,11 @@ namespace net2.Controllers
         }
 
 
-           public IActionResult FormularioEditar()
+           public IActionResult FormularioEditar(String dni)
         {
             PersonaRepository repositorio= new PersonaRepository();
-            
+            Persona p=repositorio.BuscarUno(dni);
+            ViewBag.persona=p;
             return View();
         }
 
