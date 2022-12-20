@@ -7,7 +7,11 @@
   <script>
     $(document).ready(function() {
 
-        alert("hola");
+       $(".editar").click(function(e) {
+
+        e.preventDefault();
+        alert("pulsaste");
+       })
     });
   </script>
 }
@@ -27,7 +31,7 @@
         <td>@persona.Nombre</td>
          <td>@persona.Apellidos</td>
           <td><a href="/persona/borrar?dni=@persona.Dni">borrar</a></td>
-          <td><a href="/persona/formularioeditar?dni=@persona.Dni">editar</a></td>
+          <td><a class="editar" href="/persona/formularioeditar?dni=@persona.Dni">editar</a></td>
         </tr>
     }
     </table>
