@@ -71,7 +71,7 @@ public  void  Insertar(Persona persona) {
 
         }
 
-public  void  Borrar(Persona persona) {
+public  void  Borrar(Persona p) {
 
 
             var sb = new MySqlConnectionStringBuilder
@@ -88,7 +88,7 @@ public  void  Borrar(Persona persona) {
 
             var comando = conn.CreateCommand();
             comando.CommandText = 
-            " delete from Personas where dni= '" +persona.Dni+ "'";
+            " delete from Personas where dni= '" +p.Dni+ "'";
             comando.ExecuteNonQuery();
 
           
