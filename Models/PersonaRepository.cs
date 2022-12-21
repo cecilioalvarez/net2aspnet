@@ -156,9 +156,6 @@ public  void  Borrar(Persona p) {
             " delete from Personas where dni= '" +p.Dni+ "'";
             comando.ExecuteNonQuery();
 
-          
-
-
         }
 
 
