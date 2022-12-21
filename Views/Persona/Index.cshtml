@@ -7,10 +7,18 @@
   <script>
     $(document).ready(function() {
 
+        var dniBorrar;
+
        $(".borrar").click(function(e) {
+
+                dniBorrar=$(this).data("dni");
 
                 $("#cajaBorrar").modal("show");
                  e.preventDefault();   
+       })
+       $("#borrar").click(function(e) {
+
+               alert(dniBorrar);
        })
     });
   </script>
@@ -30,7 +38,7 @@
         <td>@persona.Dni</td>
         <td>@persona.Nombre</td>
          <td>@persona.Apellidos</td>
-          <td><a class="borrar" href="/persona/borrar?dni=@persona.Dni">borrar</a></td>
+          <td><a class="borrar" data-dni="@persona.Dni" href="/persona/borrar?dni=@persona.Dni">borrar</a></td>
           <td><a class="editar" href="/persona/formularioeditar?dni=@persona.Dni">editar</a></td>
         </tr>
     }
