@@ -12,7 +12,7 @@
        $(".borrar").click(function(e) {
 
                 dniBorrar=$(this).data("dni");
-
+                $("#textodni").text(dniBorrar);
                 $("#cajaBorrar").modal("show");
                  e.preventDefault();   
        })
@@ -62,7 +62,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <p>Procederemos al borrado de la persona</p>
+              <p>Procederemos al borrado de la persona <span id="textodni"></span></span></p>
             </div>
             <div class="modal-footer">
               <button type="button" id="borrar" class="btn btn-primary">
